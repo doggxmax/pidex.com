@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.container {
+  background-image: url(pics/IMG_4394-scaled.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-size: 14px;
+  padding-top: 30px;
+}
+.nav-sticky {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  z-index: 100;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.nav a img {
+  height: 120px;
+  max-width: 100%;
+}
+.nav li {
+  padding-bottom: 30px;
+}
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.nav li a:hover,
+.nav li a:active {
+  color: #ff9600;
+}
+.bb-caret::after {
+  font-family: "FontAwesome";
+  content: "\f107";
+  margin-left: 4px;
+}
+.sub-hover:hover > .subheading,
+.sub-hover:active > .subheading {
+  display: block;
+}
+.subheading {
+  position: absolute;
+  top: 90px;
+  left: 75%;
+  display: none;
+  background-color: red;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.subheading a {
+  display: block;
+  margin-bottom: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.201);
+  padding: 2px 8px;
+  border-radius: 1px;
+}
+.subheading a:hover,
+.subheading a:active {
+  color: #fff;
+}
+.alt-header {
+  width: 1170px;
+  margin: 0 auto;
+  margin-right: 120px;
+  margin-top: 120px;
+}
+.pide {
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+  width: 300px;
+  height: 45px;
+  padding-top: 12px;
+  padding-left: 20px;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  background-color: #ff9600;
+}
+.enfes {
+  font-size: 100px;
+  padding-top: 25px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 100px;
+  width: 500px;
+  text-shadow: 100px 100px 100px rgba(0, 0, 0, 0.991);
+}
+.tum {
+  font-size: 16px;
+  padding: 30px 0 45px;
+  color: #fff;
+}
+.mi {
+  display: inline-block;
+  margin-bottom: 100px;
+}
+.mi a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.mune {
+  background-color: rgb(191, 30, 46);
+  padding: 18px 54px;
+  border-radius: 100px;
+}
+.mune:hover,
+mune:active {
+  background-color: #ff9600;
+}
+.ilet {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 18px 50px;
+  border-radius: 100px;
+}
+.ilet:hover,
+.ilet:active {
+  background-color: #fff;
+  color: rgb(191, 30, 46);
+}
+.most-popular {
+  position: relative;
+  height: 700px;
+  width: 100%;
+}
+.most-popular::before {
+  content: "";
+  background-image: url("pics/ella-olsson.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+.most-popular div {
+  text-align: center;
+}
+.most-popular div h3 {
+  position: relative;
+  font-size: 48px;
+  padding: 80px 20px 40px;
+}
+.most-popular div img {
+  position: relative;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  padding: 40px 180px;
+}
+.intro::before {
+  content: "";
+  position: absolute;
+  background-image: url(pics/aIMG_4852-scaled.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.intro-pic {
+  position: relative;
+}
+.intro-pic figure img {
+  width: 543px;
+}
+.intro-exp {
+  position: relative;
+}
+.intro-exp h3 {
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.intro-exp div p b {
+  font-weight: bold;
+}
+.intro-exp div {
+  line-height: 40px;
+}
+.intro-exp div p {
+  color: #fff;
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  padding: 100px 200px 300px 200px;
+  gap: 5px;
+}
+.gallery figure img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+footer figure img {
+  width: 270px;
+  height: 90px;
+}
+.foot {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 100px;
+  margin-right: 200px;
+}
+.foot div div h5 {
+  color: #ca0808;
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.foot div div li {
+  list-style-type: none;
+  line-height: 2;
+}
+.foot div div li a {
+  font-size: 16px;
+  color: #555555;
+  text-decoration: none;
+  font-weight: 300;
+}
+.foot div div li a:hover,
+.foot div div li a:active {
+  color: #ff9600;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
